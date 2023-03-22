@@ -1,7 +1,21 @@
-# Tauri + React
+# Испытание Гидрозащиты
 
-This template should help get you started developing with Tauri and React in Vite.
+Программное обеспечение стенда испытания гидрозащиты и опорных модулей. Испытания включают в себя:
++ измерение давлений срабатывания верхней и нижней диафрагм
++ измерение потребляемой мощности
+  - со статической нагрузкой для ГЗ
+  - с поэтапным увеличением нагрузки для ОМ
+  - замер вибрации
 
-## Recommended IDE Setup
+#### Использованые технологии
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- back-end:   __Tauri__
+- front-end:  __React + MaterialUI__
+- хранение:   __SQLite3__
+- периферия:  __Adam 5000 TCP__
+
+### `npm run tauri dev`
+
+![Основное окно](./resources/screens/main.jpg)
+![Давление диафрагм](./resources/screens/press.jpg)
+![Потребляемая мощность](./resources/screens/power.jpg)
